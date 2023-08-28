@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+html {
+  padding-top: 0px;
+}
+body {
+  margin: -200px;
+  transform: scale(0.65);
+  background-color: black;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid rgba(0, 255, 255, 0.584);
+  box-shadow: 0 0 20px rgb(255, 0, 0);
+  padding: 4%;
+}
+.title {
+  color: rgb(54, 64, 101);
+  color: aqua;
+  text-shadow: 0 0 20px aqua;
+  font-size: 100px;
+}
+.content {
+  text-align: center;
+}
+
+#message {
+  padding: 50px;
+  color: rgb(197, 195, 195);
+  background: #474747;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 80px;
+  border-radius: 10px;
+  font-weight: 900;
+}
+
+#text {
+  color: rgb(197, 195, 195);
+  background: #474747;
+  font-size: 80px;
+  width: 95%;
+  resize: none;
+  font-weight: 900;
+  border-radius: 10px;
+  padding: 50px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+#resultInner {
+  font-size: 70px;
+  padding: 10px 70px;
+  border: solid aqua;
+}
+#start-btn {
+  font-weight: 900;
+  margin-top: 20px;
+  border-radius: 15px;
+  font-size: 80px;
+  padding: 0.5% 3% 0.5% 3%;
+  background: rgb(203, 203, 203);
+}
+#start-btn:hover {
+  transform: scale(1.05);
+}
+#modeChange {
+  color: rgb(0, 0, 0);
+  background: aqua;
+  position: absolute;
+  border: 10px solid aqua;
+  font-size: 45px;
+  font-weight: 900;
+  margin: 20px;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+#modeChange:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+#disclaimer {
+  color: rgb(165, 165, 165);
+  font-size: 70px;
+}
