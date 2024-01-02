@@ -11,7 +11,7 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
@@ -27,28 +27,41 @@
   </head>
 
   <body>
-    <div id="modeChange">💡Light Mode</div>
-    <div class="main">
-      <div id="result" class="mt-2 pt-2 text-center">
-        <h4 id="resultInner" style="color: rgb(230, 230, 230)"></h4>
-      </div>
-      <p id="disclaimer">
-        <br />
-        <b>Adjust zoom Size to 25%</b>
-      </p>
-      <div class="content container-fluid">
-        <h1 class="title font-weight-bold">
-          Check your Typing Speed & Accuracy
-        </h1>
-        <br />
-        <h3 id="message" class="mx-4 text-center my-4">
-          Text will appear here once you click on Start
-        </h3>
+    <div class="all">
+      <div class="main">
+        <div class="topnav">
+          <div id="modeChange">💡Light Mode</div>
+          <div id="timer" style="color: rgb(194, 191, 228); font-size: 1.5rem">
+            Time:
+            <select name="Timing" id="Timing" onchange="timing() ">
+              <option value="15">15 Sec</option>
+              <option value="60">1 Min</option>
+              <option value="120">2 Min</option>
+              <option value="300">5 Min</option>
+            </select>
+          </div>
+        </div>
 
-        <textarea tabindex="0" autocomplete="off" id="text" rows="4"></textarea>
-        <br />
+        <div class="content">
+          <div id="result">
+            <h4 id="resultInner" style="color: rgb(230, 230, 230)"></h4>
+          </div>
+          <h1 class="title">Check your Typing Speed & Accuracy</h1>
+          <br />
+          <h3 id="message">Text will appear here once you click on Start</h3>
 
-        <button id="start-btn">Start</button>
+          <textarea
+            tabindex="0"
+            autocomplete="off"
+            id="text"
+            rows="3"
+          ></textarea>
+          <br />
+
+          <button id="start-btn">Start</button>
+
+          <button id="restart-btn" onclick="reload()">Restart</button>
+        </div>
       </div>
     </div>
   </body>
